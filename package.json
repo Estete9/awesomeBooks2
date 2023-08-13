@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "full-icu": "^1.5.0",
+    "luxon": "^3.4.0"
+  }
 }
