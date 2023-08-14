@@ -6,4 +6,3 @@ export default function attachEventListener(book) {
     it.onclick = (event) => book.deleteBook(event, book);
   });
 }
-
