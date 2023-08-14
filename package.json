@@ -1,7 +1,7 @@
 {
   "name": "awsomebooks2",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.47.0",
     "full-icu": "^1.5.0",
-    "luxon": "^3.4.0"
+    "nodejs": "^0.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.47.0"
   }
 }
