@@ -39,3 +39,4 @@ export default function populateBookSection(bookItem) {
   }
   attachEventListener(bookItem);
 }
+

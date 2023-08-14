@@ -49,3 +49,4 @@ export class Books {
     document.querySelector('#book_author').value = '';
   }
 }
+

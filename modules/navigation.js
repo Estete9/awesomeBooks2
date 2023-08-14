@@ -52,3 +52,4 @@ export default function attachNavigationOnClick(updateCollection) {
     btn.onclick = () => navigate(index, updateCollection);
   });
 }
+
