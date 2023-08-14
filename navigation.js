@@ -1,7 +1,7 @@
 // NAVIGATION MENU LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const navBtns = document.querySelectorAll('#menu li');
 // onclick receives the index of which btn was clicked
-export function HighlightSelection(index) {
+function HighlightSelection(index) {
   navBtns.forEach((btn, i) => {
     btn.classList.remove('selected');
     if (index === i) {
@@ -11,7 +11,7 @@ export function HighlightSelection(index) {
   });
 }
 
-export function navigate(index) {
+function navigate(index) {
   const sections = ['list', 'add-new', 'contact'];
   const bookCollection = document.getElementById('book-collection');
   const addBookSection = document.getElementById('add-book-section');
@@ -45,7 +45,9 @@ export function navigate(index) {
   }
 }
 
-// loop through btns adding onclick
-navBtns.forEach((btn, index) => {
-  btn.onclick = () => navigate(index);
-});
+export default function attachNavigationOnClick() {
+  // loop through btns adding onclick
+  navBtns.forEach((btn, index) => {
+    btn.onclick = () => navigate(index);
+  });
+}
