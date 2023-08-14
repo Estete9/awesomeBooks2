@@ -1,4 +1,4 @@
-import { DateTime } from './luxon.min.js';
+import { DateTime } from '../node_modules/luxon.min.js';
 
 // DISPLAY CURRENT TIME LOGIC
 export default function displayTime() {
