@@ -1,4 +1,7 @@
-export default function () {
+// const bookItem = new Books();
+const booksWrapper = document.getElementById('book-collection-wrapper');
+
+export default function populateBookSection(bookItem) {
   const localData = localStorage.getItem('books');
   let local = [];
 
@@ -34,4 +37,4 @@ export default function () {
     booksWrapper.appendChild(book);
   }
   bookItem.attachEventListener();
-};
+}

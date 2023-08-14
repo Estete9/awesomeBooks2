@@ -1,4 +1,4 @@
-// BOOK COLLECTION CLASS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const addButton = document.getElementById('add_button');
 export class Books {
   constructor() {
     this.title = '';

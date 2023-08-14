@@ -13,4 +13,3 @@ export default function displayTime() {
   document.getElementById('date-subheader').innerHTML = date;
   setTimeout(displayTime, 1000);
 }
-
