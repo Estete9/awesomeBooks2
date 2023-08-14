@@ -74,7 +74,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo
-comming soon  <a name="live-demo" href="https://estete9.github.io/Fullstack-Portfolio/">here!</a>
+comming soon  <a name="live-demo" href="https://estete9.github.io/awesomeBooks2/">here!</a>
 
 <!-- GETTING STARTED -->
 
