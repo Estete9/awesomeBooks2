@@ -9,4 +9,3 @@ populateCollections(bookItem);
 navigationSetup(() => populateCollections(bookItem));
 attachEventListener(bookItem);
 displayTime();
-
