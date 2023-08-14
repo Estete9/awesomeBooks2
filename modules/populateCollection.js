@@ -2,7 +2,7 @@ import attachEventListener from './eventListenerAttacher.js';
 
 const booksWrapper = document.getElementById('book-collection-wrapper');
 
-export default function populateBookSection(bookItem) {
+const populateBookSection = (bookItem) => {
   const localData = localStorage.getItem('books');
   let local = [];
 
@@ -38,4 +38,6 @@ export default function populateBookSection(bookItem) {
     booksWrapper.appendChild(book);
   }
   attachEventListener(bookItem);
-}
+};
+
+export default populateBookSection;
