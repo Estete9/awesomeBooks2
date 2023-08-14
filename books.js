@@ -1,4 +1,5 @@
-const addButton = document.getElementById('add_button');
+import populateBookSection from './populateCollection.js';
+
 export class Books {
   constructor() {
     this.title = '';
@@ -6,7 +7,8 @@ export class Books {
     this.booksArr = [];
   }
 
-  deleteBook(event) {
+  deleteBook(event, bookItem) {
+    console.log('delete book run');
     const localData = localStorage.getItem('books');
     let local = [];
     const bookId = event.target.id;
@@ -22,7 +24,7 @@ export class Books {
     this.booksArr = local;
     this.booksArr.splice(bookId, 1);
     localStorage.setItem('books', JSON.stringify(this.booksArr));
-    populateBookSection();
+    populateBookSection(bookItem);
   }
 
   // SAVE INTERACTION WITH USER IN LOCAL STORAGE
@@ -46,14 +48,5 @@ export class Books {
     localStorage.setItem('books', JSON.stringify(this.booksArr));
     document.querySelector('#book_title').value = '';
     document.querySelector('#book_author').value = '';
-    populateBookSection();
-  }
-
-  attachEventListener() {
-    addButton.onclick = this.addToStorage;
-    const deleteBtns = Array.from(document.querySelectorAll('.delete-btn'));
-    deleteBtns.forEach((it) => {
-      it.onclick = this.deleteBook;
-    });
   }
 }

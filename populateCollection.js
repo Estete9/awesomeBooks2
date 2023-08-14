@@ -1,4 +1,5 @@
-// const bookItem = new Books();
+import attachEventListener from './eventListenerAttacher.js';
+
 const booksWrapper = document.getElementById('book-collection-wrapper');
 
 export default function populateBookSection(bookItem) {
@@ -36,5 +37,5 @@ export default function populateBookSection(bookItem) {
     book.innerHTML = bookHTML;
     booksWrapper.appendChild(book);
   }
-  bookItem.attachEventListener();
+  attachEventListener(bookItem);
 }

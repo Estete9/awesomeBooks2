@@ -11,7 +11,7 @@ function HighlightSelection(index) {
   });
 }
 
-function navigate(index) {
+function navigate(index, updateCollection) {
   const sections = ['list', 'add-new', 'contact'];
   const bookCollection = document.getElementById('book-collection');
   const addBookSection = document.getElementById('add-book-section');
@@ -23,6 +23,7 @@ function navigate(index) {
       addBookSection.classList.remove('show');
       contactSection.classList.remove('show');
       HighlightSelection(index);
+      updateCollection();
       break;
     }
     case 'add-new': {
@@ -45,9 +46,9 @@ function navigate(index) {
   }
 }
 
-export default function attachNavigationOnClick() {
+export default function attachNavigationOnClick(updateCollection) {
   // loop through btns adding onclick
   navBtns.forEach((btn, index) => {
-    btn.onclick = () => navigate(index);
+    btn.onclick = () => navigate(index, updateCollection);
   });
 }
