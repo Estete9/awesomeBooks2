@@ -1,6 +1,6 @@
 import populateBookSection from './populateCollection.js';
 
-export class Books {
+export default class Books {
   constructor() {
     this.title = '';
     this.author = '';
